@@ -18,9 +18,15 @@ const TYPES = {
 
 http
   .createServer((req, res) => {
-    const urlPath = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
+    let urlPath;
+    try {
+      urlPath = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
+    } catch {
+      res.writeHead(400).end('Bad request');
+      return;
+    }
     let file = path.normalize(path.join(DIST, urlPath));
-    if (!file.startsWith(DIST)) {
+    if (file !== DIST && !file.startsWith(DIST + path.sep)) {
       res.writeHead(403).end('Forbidden');
       return;
     }
@@ -32,4 +38,5 @@ http
     res.writeHead(200, { 'content-type': TYPES[path.extname(file)] || 'application/octet-stream', 'cache-control': 'no-store' });
     fs.createReadStream(file).pipe(res);
   })
-  .listen(PORT, () => console.log(`Preview at http://localhost:${PORT}`));
+  // Listen on this machine only, so the preview is not reachable from the local network.
+  .listen(PORT, '127.0.0.1', () => console.log(`Preview at http://localhost:${PORT}`));

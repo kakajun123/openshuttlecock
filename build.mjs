@@ -2,6 +2,7 @@
 // Zero dependencies: `node build.mjs` writes the whole site to ./dist.
 import fs from 'node:fs';
 import path from 'node:path';
+import crypto from 'node:crypto';
 
 const ROOT = import.meta.dirname;
 const SRC = path.join(ROOT, 'src');
@@ -21,6 +22,15 @@ const DEFAULT_LANG = 'en';
 const ARTICLE_LANGS = ['en', 'zh'];
 
 /* ---------- helpers ---------- */
+
+// The only two inline scripts on the site. The Content-Security-Policy allows them by hash, nothing else inline.
+const JS_FLAG_SCRIPT = "document.documentElement.classList.add('js')";
+const rootRedirectScript = () =>
+  `(function(){var s=${JSON.stringify(LANGS)},v=null;try{v=localStorage.getItem('lang')}catch(e){}` +
+  `var w=(v?[v]:[]).concat(navigator.languages||[navigator.language||'']),p='${DEFAULT_LANG}';` +
+  `for(var i=0;i<w.length;i++){var c=String(w[i]).toLowerCase().split('-')[0];if(s.indexOf(c)!==-1){p=c;break}}` +
+  `location.replace('/'+p+'/')})();`;
+const cspHash = (code) => `'sha256-${crypto.createHash('sha256').update(code).digest('base64')}'`;
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -47,7 +57,8 @@ function copyDir(from, to) {
 function inline(text) {
   return esc(text)
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\[([^\]]+)\]\((https?:[^)\s]+|\/[^)\s]*)\)/g, '<a href="$2">$1</a>');
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" rel="noopener noreferrer">$1</a>')
+    .replace(/\[([^\]]+)\]\((\/(?!\/)[^)\s]*)\)/g, '<a href="$2">$1</a>');
 }
 
 function markdown(source) {
@@ -199,7 +210,7 @@ function layout({ t, lang, pagePath, title, description, body, current }) {
   <link rel="alternate" hreflang="x-default" href="${SITE.url}/${DEFAULT_LANG}/${pagePath}">
   <link rel="stylesheet" href="/assets/fonts.css">
   <link rel="stylesheet" href="/assets/site.css">
-  <script>document.documentElement.classList.add('js')</script>
+  <script>${JS_FLAG_SCRIPT}</script>
 </head>
 <body id="top" data-page="${current}">
 <a class="skip" href="#main">${esc(t.site.skip)}</a>
@@ -609,20 +620,7 @@ function rootPage() {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Open Shuttlecock</title>
   <link rel="canonical" href="${SITE.url}/${DEFAULT_LANG}/">
-  <script>
-    (function () {
-      var supported = ${JSON.stringify(LANGS)};
-      var saved = null;
-      try { saved = localStorage.getItem('lang'); } catch (e) {}
-      var wanted = (saved ? [saved] : []).concat(navigator.languages || [navigator.language || '']);
-      var pick = '${DEFAULT_LANG}';
-      for (var i = 0; i < wanted.length; i++) {
-        var code = String(wanted[i]).toLowerCase().split('-')[0];
-        if (supported.indexOf(code) !== -1) { pick = code; break; }
-      }
-      location.replace('/' + pick + '/');
-    })();
-  </script>
+  <script>${rootRedirectScript()}</script>
   <noscript><meta http-equiv="refresh" content="0; url=/${DEFAULT_LANG}/"></noscript>
 </head>
 <body>
@@ -696,7 +694,7 @@ write(
     .map((u) => `  <url><loc>${u}</loc></url>`)
     .join('\n')}\n</urlset>\n`,
 );
-// Response headers for the host. The page uses small inline scripts and inline style variables, hence 'unsafe-inline'.
+// Response headers for the host. Inline scripts are allowed only by hash. Inline style attributes carry layout variables, hence 'unsafe-inline' for styles.
 // Cloudflare Web Analytics (cookieless visit counts) is allowed to load and report.
 write(
   '_headers',
@@ -705,7 +703,7 @@ write(
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: camera=(), microphone=(), geolocation=()
-  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' ${cspHash(JS_FLAG_SCRIPT)} ${cspHash(rootRedirectScript())} https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'
 
 /assets/fonts/*
   Cache-Control: public, max-age=31536000, immutable
