@@ -1,0 +1,5 @@
+dist/
+.taste-skill/
+_internal/
+.claude/
+.DS_Store

@@ -1,0 +1,479 @@
+{
+  "lang": "en",
+  "langName": "English",
+  "dir": "ltr",
+  "site": {
+    "name": "Open Shuttlecock",
+    "description": "A free, open-source site that reads the feathers of a badminton shuttlecock from three photos and says how sure it is.",
+    "skip": "Skip to content"
+  },
+  "nav": {
+    "knowledge": "Knowledge",
+    "ask": "Ask",
+    "records": "Records",
+    "factories": "Factories",
+    "about": "About",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Open Shuttlecock: read shuttlecock feathers from three photos",
+    "statement": "Three photos of a shuttlecock. An honest read of its feathers.",
+    "heroAlt": "A white feather shuttlecock lying on its side against a black background",
+    "railAlt": "Several new feather shuttlecocks standing in bright light",
+    "facts": [
+      "16 feathers on every shuttle",
+      "3 photos for each reading",
+      "Grades 1 to 5, and 1 is best",
+      "No account needed",
+      "Data under CC BY 4.0"
+    ],
+    "rail": [
+      "Free to use",
+      "Open source",
+      "Says when it is unsure",
+      "Photo reading opens after testing"
+    ],
+    "action": "See a sample reading",
+    "how": {
+      "heading": "How a reading works",
+      "clauses": [
+        "First, the whole shuttle from a step back.",
+        "Then part the feathers and move in close.",
+        "Then hold it up against a light.",
+        "Last, read what the photos show."
+      ],
+      "cardTitle": "Your photos",
+      "slots": [
+        "Whole shuttle",
+        "Feathers parted",
+        "Against the light"
+      ],
+      "progress": [
+        "1 of 3",
+        "2 of 3",
+        "3 of 3",
+        "Reading ready"
+      ],
+      "result": "Closer to grade 2",
+      "resultNote": "Confidence: medium",
+      "empty": "Waiting"
+    },
+    "sample": {
+      "heading": "A sample reading",
+      "note": "This sample shows the format. It is not a real result.",
+      "warning": "An AI reading can be wrong. Treat it as a second opinion.",
+      "confidence": {
+        "high": "High",
+        "medium": "Medium",
+        "low": "Low"
+      },
+      "confidenceLabel": "Confidence",
+      "rows": [
+        {
+          "name": "Feather shape",
+          "value": "Full round",
+          "conf": "high",
+          "detail": "The tips are cut to an even round arc on all sixteen feathers."
+        },
+        {
+          "name": "Shaft",
+          "value": "Straight, medium thickness",
+          "conf": "high",
+          "detail": "The shafts run straight from cork to tip, with no visible bend."
+        },
+        {
+          "name": "Consistency",
+          "value": "Even across sixteen",
+          "conf": "medium",
+          "detail": "Height and spacing match. Two feathers sit slightly wider than the rest."
+        },
+        {
+          "name": "Whiteness",
+          "value": "White, two with grey marks",
+          "conf": "medium",
+          "detail": "Most feathers are clean white. Two show faint grey flecks near the tip."
+        },
+        {
+          "name": "Visible defects",
+          "value": "One creased vane",
+          "conf": "medium",
+          "detail": "One feather has a crease across the vane. No broken shafts in view."
+        },
+        {
+          "name": "Grade tendency",
+          "value": "Closer to grade 2",
+          "conf": "medium",
+          "detail": "Shape and shaft point to the upper grades. The grey marks and the crease hold it below grade 1."
+        },
+        {
+          "name": "Workmanship",
+          "value": "Glue even, threads level",
+          "conf": "high",
+          "detail": "Listed on its own. It does not change the feather grade."
+        }
+      ]
+    },
+    "limits": {
+      "headingSoft": "What a photo",
+      "headingFull": "cannot tell you",
+      "button": "Read the photo guide",
+      "tabs": [
+        {
+          "name": "Cannot see",
+          "note": "from a photo",
+          "items": [
+            {
+              "title": "The cork inside",
+              "note": "Solid, layered or composite cork looks the same from outside."
+            },
+            {
+              "title": "Weight",
+              "note": "A few tenths of a gram matter, and a photo has no scale."
+            },
+            {
+              "title": "Speed",
+              "note": "Speed is tested by hitting the shuttle, never by looking."
+            },
+            {
+              "title": "Flight stability",
+              "note": "Wobble shows in the air, after the first clear."
+            },
+            {
+              "title": "Durability",
+              "note": "How many rallies it lasts depends on storage and play."
+            }
+          ]
+        },
+        {
+          "name": "Will not say",
+          "note": "by design",
+          "items": [
+            {
+              "title": "Whether it is genuine",
+              "note": "No reading here judges a brand's authenticity."
+            },
+            {
+              "title": "Which factory made it",
+              "note": "Feathers do not carry a signature a photo can prove."
+            },
+            {
+              "title": "What it is worth",
+              "note": "No prices and no value estimates."
+            },
+            {
+              "title": "Which brand to buy",
+              "note": "Readings and articles recommend no brand, ours included."
+            },
+            {
+              "title": "How it will play",
+              "note": "No promises about performance of any kind."
+            }
+          ]
+        },
+        {
+          "name": "Always says",
+          "note": "every time",
+          "items": [
+            {
+              "title": "That it may be wrong",
+              "note": "The warning is fixed at the top of every reading."
+            },
+            {
+              "title": "How sure it is",
+              "note": "High, medium or low for each line. No fake percentages."
+            },
+            {
+              "title": "What it looked at",
+              "note": "Each line names the feature it was read from."
+            },
+            {
+              "title": "When a photo is too poor",
+              "note": "Dark or blurred photos get a request to shoot again."
+            },
+            {
+              "title": "That damage may come from play",
+              "note": "A used shuttle is not marked down for being used."
+            }
+          ]
+        }
+      ]
+    },
+    "open": {
+      "heading": "Open by default",
+      "tiles": [
+        {
+          "name": "Knowledge base",
+          "role": "Written notes, CC BY 4.0",
+          "alt": "A new feather shuttlecock standing on a dark surface"
+        },
+        {
+          "name": "Reference photos",
+          "role": "Reviewed photos, CC BY 4.0",
+          "alt": "Two feather shuttlecocks and a racket lying on grass"
+        },
+        {
+          "name": "Code",
+          "role": "The whole site, MIT licence",
+          "alt": "A feather shuttlecock on a dark surface with its reflection"
+        },
+        {
+          "name": "Weekly review",
+          "role": "A person checks every entry",
+          "alt": "A used feather shuttlecock lying on a wooden table"
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Factories, show your feathers",
+      "text": "Contribute photos or process notes and get a public, credited listing. No fees, no commission, no exclusivity.",
+      "button": "How contributing works",
+      "alt": "A used feather shuttlecock resting on the strings of a racket"
+    },
+    "marquee": "Sixteen feathers · Three photos · One honest read"
+  },
+  "factories": {
+    "title": "For factories",
+    "h1": "For factories",
+    "statement": "Put your feathers on the public record, with your name on them.",
+    "alt": "A new feather shuttlecock standing on a dark surface",
+    "giveHeading": "What you give",
+    "give": [
+      "Photos of feathers or shuttles you make, with the grade you gave them.",
+      "Or process knowledge: how you sort, cut and grade.",
+      "Permission in writing to publish it under an open licence."
+    ],
+    "getHeading": "What you get",
+    "get": [
+      "A listing with your name, logo, location, products and contact.",
+      "Credit wherever your data is reused. The licence requires it.",
+      "A link from every record and article you contributed to."
+    ],
+    "termsHeading": "The terms, in plain words",
+    "terms": [
+      {
+        "title": "Free, and not exclusive",
+        "note": "No fees and no commission. You can work with anyone else."
+      },
+      {
+        "title": "No visitor details",
+        "note": "We never pass visitor contacts or uploads to a factory."
+      },
+      {
+        "title": "No client names",
+        "note": "We do not publish who you manufacture for."
+      },
+      {
+        "title": "Your logo stays yours",
+        "note": "Logos and trademarks are shown with permission and are not open-licensed."
+      },
+      {
+        "title": "Published means published",
+        "note": "Open data cannot be recalled from copies other people already hold."
+      }
+    ],
+    "sampleHeading": "How a listing looks",
+    "sampleNote": "An example listing. Not a real factory.",
+    "sample": {
+      "name": "Example Feather Works",
+      "fields": [
+        [
+          "Location",
+          "City, Province"
+        ],
+        [
+          "Makes",
+          "Goose feather shuttlecocks, grades 1 to 3"
+        ],
+        [
+          "Contributed",
+          "120 photos and sorting notes"
+        ],
+        [
+          "Website",
+          "example.com"
+        ],
+        [
+          "Contact",
+          "sales@example.com"
+        ]
+      ]
+    },
+    "openHeading": "When the directory opens",
+    "openText": "The public directory opens once two outside factories have joined, so that no single name stands alone. Until then, contributors are credited inside each record and article.",
+    "contactHeading": "Start with one message",
+    "contactText": "Tell us what you make and what you could share. We reply with the short permission text to confirm.",
+    "contactButton": "Email the project",
+    "mailSubject": "Factory contribution to Open Shuttlecock",
+    "mailBody": "Factory name:\nLocation:\nWhat we make:\nWhat we could share (photos, grades, process notes):\n"
+  },
+  "knowledge": {
+    "title": "Knowledge base",
+    "h1": "Knowledge base",
+    "statement": "Plain notes on shuttlecock feathers. Free to copy, with credit.",
+    "alt": "Several new feather shuttlecocks standing in bright light",
+    "listHeading": "Articles",
+    "read": "Read",
+    "soonHeading": "In preparation",
+    "soon": [
+      {
+        "title": "The five grades of feathers",
+        "note": "Being written with the people who sort them by hand."
+      },
+      {
+        "title": "Feather shapes and how they are cut",
+        "note": "Full round, square and the cuts between them."
+      },
+      {
+        "title": "Common defects and how to spot them",
+        "note": "Creases, marks, split vanes and broken shafts."
+      }
+    ],
+    "licenceHeading": "Use it freely",
+    "licenceText": "Every article is under CC BY 4.0. Copy, translate or reprint it, and credit Open Shuttlecock with a link.",
+    "fallbackNote": "This article is available in English and Chinese.",
+    "back": "All articles",
+    "updated": "Updated"
+  },
+  "ask": {
+    "title": "Ask a question",
+    "h1": "Ask a question",
+    "statement": "Ask anything about shuttlecocks. An AI drafts the answer, a person checks it, then it is published.",
+    "alt": "Two feather shuttlecocks and a racket lying on grass",
+    "formHeading": "Your question",
+    "question": "Question",
+    "questionHint": "One question at a time works best.",
+    "email": "Email (optional)",
+    "emailHint": "Used once, to tell you the answer is up. Never published.",
+    "consent": "I understand that my question and its answer will be published without my name.",
+    "submit": "Send question",
+    "stepsHeading": "What happens next",
+    "steps": [
+      {
+        "title": "It is read as a question",
+        "note": "Text you send is treated as content, never as instructions."
+      },
+      {
+        "title": "An AI drafts an answer",
+        "note": "It writes from the open knowledge base."
+      },
+      {
+        "title": "A person reviews it",
+        "note": "Once a week, every draft is approved or rejected."
+      },
+      {
+        "title": "It is published",
+        "note": "Approved answers join the knowledge base under CC BY 4.0."
+      }
+    ],
+    "notHeading": "Not for this form",
+    "notText": "Bug reports about the site go to GitHub Issues. Requests to delete a photo go to the project email with your record number.",
+    "mailSubject": "Question for Open Shuttlecock",
+    "sentNote": "Your email app will open with the question filled in. Sending it there completes the submission."
+  },
+  "records": {
+    "title": "Reading records",
+    "h1": "Reading records",
+    "statement": "Photos and readings that passed review, open for anyone to check.",
+    "alt": "A feather shuttlecock on a dark surface with its reflection",
+    "emptyHeading": "No public records yet",
+    "emptyText": "The first records will be thirty new shuttles photographed for the launch test, six from each grade.",
+    "shownHeading": "What a record shows",
+    "shown": [
+      {
+        "title": "Three photos",
+        "note": "Whole shuttle, feathers parted, and against the light."
+      },
+      {
+        "title": "The reading",
+        "note": "Every line with its confidence, exactly as the visitor saw it."
+      },
+      {
+        "title": "The date",
+        "note": "And whether the shuttle was new or used."
+      }
+    ],
+    "neverHeading": "What stays out",
+    "never": [
+      {
+        "title": "A brand mark",
+        "note": "Photos showing a brand name or logo stay private."
+      },
+      {
+        "title": "People",
+        "note": "Photos showing a person are deleted as soon as they are detected."
+      },
+      {
+        "title": "Unreviewed entries",
+        "note": "Nothing is public until a person has approved it."
+      }
+    ],
+    "deleteHeading": "Your record number",
+    "deleteText": "Every reading gets a record number. Keep it. With it you can see your reading again, or email us to have your photos removed.",
+    "sampleButton": "See the sample reading"
+  },
+  "about": {
+    "title": "About",
+    "h1": "About the project",
+    "statement": "Open Shuttlecock is a free, open-source project for reading shuttlecock feathers.",
+    "alt": "A used feather shuttlecock lying on a wooden table",
+    "sections": [
+      {
+        "heading": "Who runs it",
+        "body": [
+          "The project was started and is run by SP x SPORT, a sports equipment company in Australia. SP x SPORT also sells shuttlecocks.",
+          "Because of that, readings and articles recommend no brand, ours included, and no reading judges whether a shuttle is genuine."
+        ]
+      },
+      {
+        "heading": "How the reading works",
+        "body": [
+          "The site does not train its own model. It sends your three photos to Claude, an AI model made by Anthropic, together with an open reference library of graded examples.",
+          "The reading is a tendency, not a verdict. Each line carries a confidence of high, medium or low."
+        ]
+      },
+      {
+        "heading": "Your photos",
+        "body": [
+          "You must tick a consent box before uploading. Location data is removed. Photos that are not a shuttlecock, or that show a person, are deleted as soon as they are detected.",
+          "Photos that fail review are deleted within 30 days. Approved photos are kept and may be published under CC BY 4.0. Copies other people have already downloaded cannot be recalled.",
+          "You can ask for removal at any time with your record number."
+        ]
+      },
+      {
+        "heading": "Licences",
+        "body": [
+          "Code is under the MIT licence. The knowledge base and data are under CC BY 4.0. Factory logos and trademarks are not open-licensed.",
+          "The repository is at github.com/kakajun123/openshuttlecock."
+        ]
+      },
+      {
+        "heading": "Where it works",
+        "body": [
+          "Photo reading is not available in mainland China, Hong Kong or Macau for now, because the AI service it uses is not offered there. The knowledge base and questions are open everywhere."
+        ]
+      },
+      {
+        "heading": "Contact",
+        "body": [
+          "Write to hello@openshuttlecock.com for questions, corrections or removal requests."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "run": "Run by SP x SPORT, Australia. SP x SPORT also sells shuttlecocks; readings and articles recommend no brand.",
+    "region": "Photo reading is not available in mainland China, Hong Kong or Macau for now.",
+    "licence": "Code MIT. Knowledge and data CC BY 4.0.",
+    "credits": "Photo credits",
+    "creditsNote": "Some photos are cropped or tinted.",
+    "source": "Source on GitHub",
+    "email": "Email the project",
+    "top": "Back to top"
+  },
+  "legal": {
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "draft": "Draft. It takes effect when the site launches.",
+    "fallbackNote": "This page is available in English and Chinese. The English version applies."
+  }
+}

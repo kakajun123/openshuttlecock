@@ -1,0 +1,479 @@
+{
+  "lang": "ms",
+  "langName": "Bahasa Melayu",
+  "dir": "ltr",
+  "site": {
+    "name": "Open Shuttlecock",
+    "description": "Laman web percuma dan sumber terbuka yang membaca bulu shuttlecock badminton daripada tiga keping foto dan memberitahu setakat mana ia yakin.",
+    "skip": "Terus ke kandungan"
+  },
+  "nav": {
+    "knowledge": "Pengetahuan",
+    "ask": "Tanya",
+    "records": "Rekod",
+    "factories": "Kilang",
+    "about": "Tentang",
+    "language": "Bahasa"
+  },
+  "home": {
+    "title": "Open Shuttlecock: baca bulu shuttlecock daripada tiga foto",
+    "statement": "Tiga foto shuttlecock. Bacaan jujur tentang bulunya.",
+    "heroAlt": "Sebiji shuttlecock bulu putih terbaring di atas latar hitam",
+    "railAlt": "Beberapa biji shuttlecock bulu baharu berdiri dalam cahaya terang",
+    "facts": [
+      "16 helai bulu pada setiap shuttlecock",
+      "3 foto untuk setiap bacaan",
+      "Gred 1 hingga 5, gred 1 terbaik",
+      "Tak perlu akaun",
+      "Data di bawah CC BY 4.0"
+    ],
+    "rail": [
+      "Percuma",
+      "Sumber terbuka",
+      "Beritahu bila tak pasti",
+      "Bacaan foto dibuka selepas ujian"
+    ],
+    "action": "Lihat contoh bacaan",
+    "how": {
+      "heading": "Cara bacaan dibuat",
+      "clauses": [
+        "Mula-mula, undur dan foto seluruhnya.",
+        "Kemudian kuak bulunya dan dekatkan kamera.",
+        "Kemudian angkat ke arah cahaya.",
+        "Akhir sekali, baca apa yang foto tunjukkan."
+      ],
+      "cardTitle": "Foto anda",
+      "slots": [
+        "Seluruh shuttlecock",
+        "Bulu dikuak",
+        "Tembus cahaya"
+      ],
+      "progress": [
+        "1 daripada 3",
+        "2 daripada 3",
+        "3 daripada 3",
+        "Bacaan siap"
+      ],
+      "result": "Lebih dekat gred 2",
+      "resultNote": "Keyakinan: sederhana",
+      "empty": "Menunggu"
+    },
+    "sample": {
+      "heading": "Contoh bacaan",
+      "note": "Contoh ini menunjukkan format sahaja. Ia bukan keputusan sebenar.",
+      "warning": "Bacaan AI boleh silap. Anggap ia pendapat kedua.",
+      "confidence": {
+        "high": "Tinggi",
+        "medium": "Sederhana",
+        "low": "Rendah"
+      },
+      "confidenceLabel": "Keyakinan",
+      "rows": [
+        {
+          "name": "Bentuk bulu",
+          "value": "Bulat penuh",
+          "conf": "high",
+          "detail": "Hujung kesemua enam belas helai bulu dipotong menjadi lengkung bulat yang sekata."
+        },
+        {
+          "name": "Batang bulu",
+          "value": "Lurus, ketebalan sederhana",
+          "conf": "high",
+          "detail": "Batang bulu lurus dari gabus ke hujung, tiada bengkok kelihatan."
+        },
+        {
+          "name": "Keseragaman",
+          "value": "Sekata pada enam belas helai",
+          "conf": "medium",
+          "detail": "Ketinggian dan jarak sama. Dua helai kelihatan sedikit lebih lebar daripada yang lain."
+        },
+        {
+          "name": "Keputihan",
+          "value": "Putih, dua helai ada tanda kelabu",
+          "conf": "medium",
+          "detail": "Kebanyakan bulu putih bersih. Dua helai ada bintik kelabu samar berhampiran hujung."
+        },
+        {
+          "name": "Kecacatan kelihatan",
+          "value": "Satu helai berkedut",
+          "conf": "medium",
+          "detail": "Satu helai bulu ada kedutan pada permukaannya. Tiada batang patah kelihatan."
+        },
+        {
+          "name": "Kecenderungan gred",
+          "value": "Lebih dekat gred 2",
+          "conf": "medium",
+          "detail": "Bentuk dan batang bulu cenderung ke gred atas. Tanda kelabu dan kedutan itu menghalangnya daripada gred 1."
+        },
+        {
+          "name": "Kualiti buatan",
+          "value": "Gam sekata, benang rata",
+          "conf": "high",
+          "detail": "Disenaraikan berasingan. Ia tidak mengubah gred bulu."
+        }
+      ]
+    },
+    "limits": {
+      "headingSoft": "Apa yang foto",
+      "headingFull": "tak dapat beritahu",
+      "button": "Baca panduan foto",
+      "tabs": [
+        {
+          "name": "Tak nampak",
+          "note": "daripada foto",
+          "items": [
+            {
+              "title": "Gabus di dalam",
+              "note": "Gabus padu, berlapis atau campuran nampak sama dari luar."
+            },
+            {
+              "title": "Berat",
+              "note": "Beza beberapa persepuluh gram pun penting, dan foto tiada penimbang."
+            },
+            {
+              "title": "Kelajuan",
+              "note": "Kelajuan diuji dengan memukul shuttlecock, bukan dengan melihat."
+            },
+            {
+              "title": "Kestabilan terbang",
+              "note": "Goyangan nampak di udara, selepas clear pertama."
+            },
+            {
+              "title": "Ketahanan",
+              "note": "Berapa lama ia tahan bergantung pada cara simpan dan cara main."
+            }
+          ]
+        },
+        {
+          "name": "Tak akan kata",
+          "note": "sengaja begitu",
+          "items": [
+            {
+              "title": "Sama ada ia tulen",
+              "note": "Tiada bacaan di sini menilai ketulenan sesuatu jenama."
+            },
+            {
+              "title": "Kilang mana yang buat",
+              "note": "Bulu tiada tanda tangan yang boleh dibuktikan oleh foto."
+            },
+            {
+              "title": "Berapa nilainya",
+              "note": "Tiada harga dan tiada anggaran nilai."
+            },
+            {
+              "title": "Jenama mana nak beli",
+              "note": "Bacaan dan artikel tidak mengesyorkan jenama, termasuk jenama kami."
+            },
+            {
+              "title": "Bagaimana ia akan main",
+              "note": "Tiada janji tentang prestasi dalam apa bentuk sekalipun."
+            }
+          ]
+        },
+        {
+          "name": "Sentiasa kata",
+          "note": "setiap kali",
+          "items": [
+            {
+              "title": "Bahawa ia mungkin silap",
+              "note": "Amaran ini tetap di atas setiap bacaan."
+            },
+            {
+              "title": "Setakat mana ia yakin",
+              "note": "Tinggi, sederhana atau rendah bagi setiap baris. Tiada peratusan palsu."
+            },
+            {
+              "title": "Apa yang dilihatnya",
+              "note": "Setiap baris menyebut ciri yang menjadi asas bacaannya."
+            },
+            {
+              "title": "Bila foto terlalu teruk",
+              "note": "Foto gelap atau kabur akan diminta ambil semula."
+            },
+            {
+              "title": "Bahawa kerosakan mungkin dari permainan",
+              "note": "Shuttlecock terpakai tidak dikurangkan markah kerana sudah dipakai."
+            }
+          ]
+        }
+      ]
+    },
+    "open": {
+      "heading": "Terbuka sejak awal",
+      "tiles": [
+        {
+          "name": "Pangkalan pengetahuan",
+          "role": "Nota bertulis, CC BY 4.0",
+          "alt": "Sebiji shuttlecock bulu baharu berdiri di atas permukaan gelap"
+        },
+        {
+          "name": "Foto rujukan",
+          "role": "Foto yang telah disemak, CC BY 4.0",
+          "alt": "Dua biji shuttlecock bulu dan sebatang raket terbaring di atas rumput"
+        },
+        {
+          "name": "Kod",
+          "role": "Seluruh laman, lesen MIT",
+          "alt": "Sebiji shuttlecock bulu di atas permukaan gelap bersama pantulannya"
+        },
+        {
+          "name": "Semakan mingguan",
+          "role": "Seorang manusia menyemak setiap entri",
+          "alt": "Sebiji shuttlecock bulu terpakai terbaring di atas meja kayu"
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Kilang, tunjukkan bulu anda",
+      "text": "Sumbangkan foto atau nota proses dan dapat penyenaraian awam dengan nama anda. Tiada yuran, tiada komisen, tiada eksklusiviti.",
+      "button": "Cara menyumbang",
+      "alt": "Sebiji shuttlecock bulu terpakai terletak di atas tali raket"
+    },
+    "marquee": "Enam belas bulu · Tiga foto · Satu bacaan jujur"
+  },
+  "factories": {
+    "title": "Untuk kilang",
+    "h1": "Untuk kilang",
+    "statement": "Letakkan bulu anda dalam rekod awam, dengan nama anda tertera.",
+    "alt": "Sebiji shuttlecock bulu baharu berdiri di atas permukaan gelap",
+    "giveHeading": "Apa yang anda beri",
+    "give": [
+      "Foto bulu atau shuttlecock yang anda buat, bersama gred yang anda berikan.",
+      "Atau pengetahuan proses: cara anda asing, potong dan gredkan.",
+      "Kebenaran bertulis untuk menerbitkannya di bawah lesen terbuka."
+    ],
+    "getHeading": "Apa yang anda dapat",
+    "get": [
+      "Penyenaraian dengan nama, logo, lokasi, produk dan hubungan anda.",
+      "Kredit di mana-mana data anda digunakan semula. Lesen mewajibkannya.",
+      "Pautan daripada setiap rekod dan artikel yang anda sumbang."
+    ],
+    "termsHeading": "Syaratnya, dalam bahasa mudah",
+    "terms": [
+      {
+        "title": "Percuma, dan tidak eksklusif",
+        "note": "Tiada yuran dan tiada komisen. Anda bebas berurusan dengan sesiapa sahaja."
+      },
+      {
+        "title": "Tiada butiran pelawat",
+        "note": "Kami tidak pernah memberi hubungan atau muat naik pelawat kepada kilang."
+      },
+      {
+        "title": "Tiada nama pelanggan",
+        "note": "Kami tidak menerbitkan untuk siapa anda mengeluarkan barang."
+      },
+      {
+        "title": "Logo anda tetap milik anda",
+        "note": "Logo dan tanda dagangan dipaparkan dengan kebenaran dan tidak berlesen terbuka."
+      },
+      {
+        "title": "Terbit bermakna terbit",
+        "note": "Data terbuka tidak boleh ditarik balik daripada salinan yang sudah dipegang orang lain."
+      }
+    ],
+    "sampleHeading": "Rupa sesuatu penyenaraian",
+    "sampleNote": "Contoh penyenaraian. Bukan kilang sebenar.",
+    "sample": {
+      "name": "Example Feather Works",
+      "fields": [
+        [
+          "Lokasi",
+          "Bandar, Negeri"
+        ],
+        [
+          "Mengeluarkan",
+          "Shuttlecock bulu angsa, gred 1 hingga 3"
+        ],
+        [
+          "Sumbangan",
+          "120 foto dan nota pengasingan"
+        ],
+        [
+          "Laman web",
+          "example.com"
+        ],
+        [
+          "Hubungan",
+          "sales@example.com"
+        ]
+      ]
+    },
+    "openHeading": "Bila direktori dibuka",
+    "openText": "Direktori awam dibuka setelah dua kilang luar menyertai, supaya tiada satu nama berdiri keseorangan. Sebelum itu, penyumbang dikreditkan dalam setiap rekod dan artikel.",
+    "contactHeading": "Mulakan dengan satu mesej",
+    "contactText": "Beritahu kami apa yang anda keluarkan dan apa yang boleh dikongsi. Kami akan balas dengan teks kebenaran ringkas untuk disahkan.",
+    "contactButton": "E-mel projek",
+    "mailSubject": "Sumbangan kilang kepada Open Shuttlecock",
+    "mailBody": "Nama kilang:\nLokasi:\nApa yang kami keluarkan:\nApa yang boleh kami kongsi (foto, gred, nota proses):\n"
+  },
+  "knowledge": {
+    "title": "Pangkalan pengetahuan",
+    "h1": "Pangkalan pengetahuan",
+    "statement": "Nota ringkas tentang bulu shuttlecock. Bebas disalin, dengan kredit.",
+    "alt": "Beberapa biji shuttlecock bulu baharu berdiri dalam cahaya terang",
+    "listHeading": "Artikel",
+    "read": "Baca",
+    "soonHeading": "Sedang disediakan",
+    "soon": [
+      {
+        "title": "Lima gred bulu",
+        "note": "Sedang ditulis bersama mereka yang mengasingnya dengan tangan."
+      },
+      {
+        "title": "Bentuk bulu dan cara dipotong",
+        "note": "Bulat penuh, segi empat dan potongan di antaranya."
+      },
+      {
+        "title": "Kecacatan biasa dan cara mengesannya",
+        "note": "Kedutan, tanda, helai bulu terbelah dan batang patah."
+      }
+    ],
+    "licenceHeading": "Guna dengan bebas",
+    "licenceText": "Setiap artikel di bawah CC BY 4.0. Salin, terjemah atau cetak semula, dan kreditkan Open Shuttlecock dengan pautan.",
+    "fallbackNote": "Artikel ini ada dalam bahasa Inggeris dan Cina.",
+    "back": "Semua artikel",
+    "updated": "Dikemas kini"
+  },
+  "ask": {
+    "title": "Tanya soalan",
+    "h1": "Tanya soalan",
+    "statement": "Tanya apa-apa tentang shuttlecock. AI menyediakan draf jawapan, seorang manusia menyemaknya, kemudian ia diterbitkan.",
+    "alt": "Dua biji shuttlecock bulu dan sebatang raket terbaring di atas rumput",
+    "formHeading": "Soalan anda",
+    "question": "Soalan",
+    "questionHint": "Satu soalan pada satu masa paling elok.",
+    "email": "E-mel (pilihan)",
+    "emailHint": "Digunakan sekali sahaja, untuk memberitahu jawapan sudah siap. Tidak diterbitkan.",
+    "consent": "Saya faham soalan saya dan jawapannya akan diterbitkan tanpa nama saya.",
+    "submit": "Hantar soalan",
+    "stepsHeading": "Apa berlaku seterusnya",
+    "steps": [
+      {
+        "title": "Ia dibaca sebagai soalan",
+        "note": "Teks yang anda hantar dianggap kandungan, bukan arahan."
+      },
+      {
+        "title": "AI menyediakan draf jawapan",
+        "note": "Ia menulis berdasarkan pangkalan pengetahuan terbuka."
+      },
+      {
+        "title": "Seorang manusia menyemaknya",
+        "note": "Seminggu sekali, setiap draf diluluskan atau ditolak."
+      },
+      {
+        "title": "Ia diterbitkan",
+        "note": "Jawapan yang diluluskan menyertai pangkalan pengetahuan di bawah CC BY 4.0."
+      }
+    ],
+    "notHeading": "Bukan untuk borang ini",
+    "notText": "Laporan pepijat tentang laman ini dihantar ke GitHub Issues. Permintaan memadam foto dihantar ke e-mel projek bersama nombor rekod anda.",
+    "mailSubject": "Soalan untuk Open Shuttlecock",
+    "sentNote": "Aplikasi e-mel anda akan terbuka dengan soalan sudah diisi. Hantar dari sana untuk melengkapkan penghantaran."
+  },
+  "records": {
+    "title": "Rekod bacaan",
+    "h1": "Rekod bacaan",
+    "statement": "Foto dan bacaan yang lulus semakan, terbuka untuk sesiapa menyemak.",
+    "alt": "Sebiji shuttlecock bulu di atas permukaan gelap bersama pantulannya",
+    "emptyHeading": "Belum ada rekod awam",
+    "emptyText": "Rekod pertama ialah tiga puluh shuttlecock baharu yang difoto untuk ujian pelancaran, enam bagi setiap gred.",
+    "shownHeading": "Apa yang dipaparkan dalam rekod",
+    "shown": [
+      {
+        "title": "Tiga foto",
+        "note": "Seluruh shuttlecock, bulu dikuak, dan tembus cahaya."
+      },
+      {
+        "title": "Bacaan",
+        "note": "Setiap baris bersama keyakinannya, tepat seperti yang dilihat pelawat."
+      },
+      {
+        "title": "Tarikh",
+        "note": "Dan sama ada shuttlecock itu baharu atau terpakai."
+      }
+    ],
+    "neverHeading": "Apa yang tidak dipaparkan",
+    "never": [
+      {
+        "title": "Tanda jenama",
+        "note": "Foto yang menunjukkan nama atau logo jenama kekal persendirian."
+      },
+      {
+        "title": "Orang",
+        "note": "Foto yang menunjukkan seseorang dipadam sebaik sahaja dikesan."
+      },
+      {
+        "title": "Entri belum disemak",
+        "note": "Tiada apa jadi awam sehingga seorang manusia meluluskannya."
+      }
+    ],
+    "deleteHeading": "Nombor rekod anda",
+    "deleteText": "Setiap bacaan mendapat nombor rekod. Simpan nombor itu. Dengannya anda boleh melihat bacaan anda semula, atau e-mel kami untuk membuang foto anda.",
+    "sampleButton": "Lihat contoh bacaan"
+  },
+  "about": {
+    "title": "Tentang",
+    "h1": "Tentang projek ini",
+    "statement": "Open Shuttlecock ialah projek percuma dan sumber terbuka untuk membaca bulu shuttlecock.",
+    "alt": "Sebiji shuttlecock bulu terpakai terbaring di atas meja kayu",
+    "sections": [
+      {
+        "heading": "Siapa yang menjalankannya",
+        "body": [
+          "Projek ini dimulakan dan dijalankan oleh SP x SPORT, syarikat peralatan sukan di Australia. SP x SPORT juga menjual shuttlecock.",
+          "Kerana itu, bacaan dan artikel tidak mengesyorkan jenama, termasuk jenama kami, dan tiada bacaan menilai sama ada sesebuah shuttlecock itu tulen."
+        ]
+      },
+      {
+        "heading": "Cara bacaan berfungsi",
+        "body": [
+          "Laman ini tidak melatih modelnya sendiri. Ia menghantar tiga foto anda kepada Claude, model AI buatan Anthropic, bersama perpustakaan rujukan terbuka yang mengandungi contoh bergred.",
+          "Bacaan ialah kecenderungan, bukan keputusan muktamad. Setiap baris ada keyakinan tinggi, sederhana atau rendah."
+        ]
+      },
+      {
+        "heading": "Foto anda",
+        "body": [
+          "Anda mesti menanda kotak persetujuan sebelum memuat naik. Data lokasi dibuang. Foto yang bukan shuttlecock, atau yang menunjukkan seseorang, dipadam sebaik sahaja dikesan.",
+          "Foto yang gagal semakan dipadam dalam masa 30 hari. Foto yang diluluskan disimpan dan mungkin diterbitkan di bawah CC BY 4.0. Salinan yang sudah dimuat turun orang lain tidak boleh ditarik balik.",
+          "Anda boleh meminta pembuangan pada bila-bila masa dengan nombor rekod anda."
+        ]
+      },
+      {
+        "heading": "Lesen",
+        "body": [
+          "Kod di bawah lesen MIT. Pangkalan pengetahuan dan data di bawah CC BY 4.0. Logo dan tanda dagangan kilang tidak berlesen terbuka.",
+          "Repositori ada di github.com/kakajun123/openshuttlecock."
+        ]
+      },
+      {
+        "heading": "Di mana ia boleh digunakan",
+        "body": [
+          "Bacaan foto buat masa ini tidak tersedia di tanah besar China, Hong Kong atau Macau, kerana perkhidmatan AI yang digunakannya tidak ditawarkan di sana. Pangkalan pengetahuan dan soalan terbuka di semua tempat."
+        ]
+      },
+      {
+        "heading": "Hubungi kami",
+        "body": [
+          "Tulis kepada hello@openshuttlecock.com untuk soalan, pembetulan atau permintaan pembuangan."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "run": "Dijalankan oleh SP x SPORT, Australia. SP x SPORT juga menjual shuttlecock; bacaan dan artikel tidak mengesyorkan jenama.",
+    "region": "Bacaan foto buat masa ini tidak tersedia di tanah besar China, Hong Kong atau Macau.",
+    "licence": "Kod MIT. Pengetahuan dan data CC BY 4.0.",
+    "credits": "Kredit foto",
+    "creditsNote": "Sesetengah foto dipotong atau diwarnakan.",
+    "source": "Sumber di GitHub",
+    "email": "E-mel projek",
+    "top": "Kembali ke atas"
+  },
+  "legal": {
+    "privacy": "Privasi",
+    "terms": "Terma",
+    "draft": "Draf. Berkuat kuasa apabila laman ini dilancarkan.",
+    "fallbackNote": "Halaman ini tersedia dalam bahasa Inggeris dan Cina. Versi bahasa Inggeris diguna pakai."
+  }
+}

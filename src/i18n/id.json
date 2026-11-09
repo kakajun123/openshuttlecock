@@ -1,0 +1,479 @@
+{
+  "lang": "id",
+  "langName": "Bahasa Indonesia",
+  "dir": "ltr",
+  "site": {
+    "name": "Open Shuttlecock",
+    "description": "Situs gratis dan open source yang membaca bulu kok bulu tangkis dari tiga foto, lalu bilang seberapa yakin hasilnya.",
+    "skip": "Langsung ke isi"
+  },
+  "nav": {
+    "knowledge": "Pengetahuan",
+    "ask": "Tanya",
+    "records": "Catatan",
+    "factories": "Pabrik",
+    "about": "Tentang",
+    "language": "Bahasa"
+  },
+  "home": {
+    "title": "Open Shuttlecock: baca bulu kok dari tiga foto",
+    "statement": "Tiga foto sebuah kok. Pembacaan bulunya yang jujur.",
+    "heroAlt": "Kok bulu angsa putih tergeletak miring di latar hitam",
+    "railAlt": "Beberapa kok bulu baru berdiri di bawah cahaya terang",
+    "facts": [
+      "16 bulu di setiap kok",
+      "3 foto untuk tiap pembacaan",
+      "Grade 1 sampai 5, 1 yang terbaik",
+      "Tanpa akun",
+      "Data berlisensi CC BY 4.0"
+    ],
+    "rail": [
+      "Gratis dipakai",
+      "Open source",
+      "Bilang kalau ragu",
+      "Baca foto dibuka setelah uji coba"
+    ],
+    "action": "Lihat contoh hasil",
+    "how": {
+      "heading": "Cara kerja pembacaan",
+      "clauses": [
+        "Pertama, foto seluruh kok dari agak jauh.",
+        "Lalu buka bulunya dan foto dari dekat.",
+        "Lalu angkat ke arah cahaya.",
+        "Terakhir, baca apa yang terlihat di foto."
+      ],
+      "cardTitle": "Foto kamu",
+      "slots": [
+        "Seluruh kok",
+        "Bulu dibuka",
+        "Lawan cahaya"
+      ],
+      "progress": [
+        "1 dari 3",
+        "2 dari 3",
+        "3 dari 3",
+        "Hasil siap"
+      ],
+      "result": "Lebih dekat ke grade 2",
+      "resultNote": "Keyakinan: sedang",
+      "empty": "Menunggu"
+    },
+    "sample": {
+      "heading": "Contoh hasil",
+      "note": "Ini contoh untuk menunjukkan format. Bukan hasil asli.",
+      "warning": "Hasil AI bisa salah. Anggap saja pendapat kedua.",
+      "confidence": {
+        "high": "Tinggi",
+        "medium": "Sedang",
+        "low": "Rendah"
+      },
+      "confidenceLabel": "Keyakinan",
+      "rows": [
+        {
+          "name": "Bentuk bulu",
+          "value": "Bulat penuh",
+          "conf": "high",
+          "detail": "Ujung keenam belas bulu dipotong membentuk lengkung bulat yang rata."
+        },
+        {
+          "name": "Tangkai",
+          "value": "Lurus, ketebalan sedang",
+          "conf": "high",
+          "detail": "Tangkai lurus dari gabus sampai ujung, tidak terlihat bengkok."
+        },
+        {
+          "name": "Keseragaman",
+          "value": "Rata di keenam belas",
+          "conf": "medium",
+          "detail": "Tinggi dan jaraknya sama. Dua bulu sedikit lebih lebar dari yang lain."
+        },
+        {
+          "name": "Keputihan",
+          "value": "Putih, dua bercak abu-abu",
+          "conf": "medium",
+          "detail": "Kebanyakan bulu putih bersih. Dua bulu punya bintik abu-abu tipis dekat ujung."
+        },
+        {
+          "name": "Cacat yang terlihat",
+          "value": "Satu helai berlipat",
+          "conf": "medium",
+          "detail": "Satu bulu punya lipatan melintang di helainya. Tidak ada tangkai patah yang terlihat."
+        },
+        {
+          "name": "Kecenderungan grade",
+          "value": "Lebih dekat ke grade 2",
+          "conf": "medium",
+          "detail": "Bentuk dan tangkai mengarah ke grade atas. Bercak abu-abu dan lipatan menahannya di bawah grade 1."
+        },
+        {
+          "name": "Kualitas buatan",
+          "value": "Lem rata, benang rapi",
+          "conf": "high",
+          "detail": "Ditulis terpisah. Tidak memengaruhi grade bulu."
+        }
+      ]
+    },
+    "limits": {
+      "headingSoft": "Yang tidak bisa",
+      "headingFull": "dilihat dari foto",
+      "button": "Baca panduan foto",
+      "tabs": [
+        {
+          "name": "Tidak terlihat",
+          "note": "dari foto",
+          "items": [
+            {
+              "title": "Gabus di dalam",
+              "note": "Gabus utuh, berlapis, atau campuran terlihat sama dari luar."
+            },
+            {
+              "title": "Berat",
+              "note": "Selisih beberapa persepuluh gram berarti, dan foto tidak punya timbangan."
+            },
+            {
+              "title": "Kecepatan",
+              "note": "Kecepatan diuji dengan memukul kok, bukan dengan melihat."
+            },
+            {
+              "title": "Kestabilan terbang",
+              "note": "Goyangannya baru terlihat di udara, setelah pukulan clear pertama."
+            },
+            {
+              "title": "Keawetan",
+              "note": "Berapa reli yang tahan tergantung penyimpanan dan cara main."
+            }
+          ]
+        },
+        {
+          "name": "Tidak akan bilang",
+          "note": "memang disengaja",
+          "items": [
+            {
+              "title": "Asli atau tidak",
+              "note": "Tidak ada hasil di sini yang menilai keaslian merek."
+            },
+            {
+              "title": "Pabrik mana yang membuat",
+              "note": "Bulu tidak punya tanda yang bisa dibuktikan lewat foto."
+            },
+            {
+              "title": "Berapa harganya",
+              "note": "Tanpa harga dan tanpa perkiraan nilai."
+            },
+            {
+              "title": "Merek mana yang dibeli",
+              "note": "Hasil dan artikel tidak merekomendasikan merek apa pun, termasuk milik kami."
+            },
+            {
+              "title": "Bagaimana rasanya dipakai",
+              "note": "Tidak ada janji soal performa dalam bentuk apa pun."
+            }
+          ]
+        },
+        {
+          "name": "Selalu bilang",
+          "note": "setiap kali",
+          "items": [
+            {
+              "title": "Bahwa bisa salah",
+              "note": "Peringatannya selalu ada di bagian atas setiap hasil."
+            },
+            {
+              "title": "Seberapa yakin",
+              "note": "Tinggi, sedang, atau rendah di tiap baris. Tanpa persentase palsu."
+            },
+            {
+              "title": "Apa yang dilihat",
+              "note": "Tiap baris menyebut ciri yang dibaca."
+            },
+            {
+              "title": "Kalau foto terlalu jelek",
+              "note": "Foto gelap atau buram diminta difoto ulang."
+            },
+            {
+              "title": "Bahwa kerusakan bisa karena dipakai main",
+              "note": "Kok bekas tidak dinilai lebih rendah hanya karena bekas."
+            }
+          ]
+        }
+      ]
+    },
+    "open": {
+      "heading": "Terbuka sejak awal",
+      "tiles": [
+        {
+          "name": "Basis pengetahuan",
+          "role": "Catatan tertulis, CC BY 4.0",
+          "alt": "Sebuah kok bulu baru berdiri di permukaan gelap"
+        },
+        {
+          "name": "Foto acuan",
+          "role": "Foto yang sudah ditinjau, CC BY 4.0",
+          "alt": "Dua kok bulu dan sebuah raket tergeletak di rumput"
+        },
+        {
+          "name": "Kode",
+          "role": "Seluruh situs, lisensi MIT",
+          "alt": "Sebuah kok bulu di permukaan gelap dengan bayangannya"
+        },
+        {
+          "name": "Tinjauan mingguan",
+          "role": "Setiap entri dicek orang",
+          "alt": "Sebuah kok bulu bekas tergeletak di meja kayu"
+        }
+      ]
+    },
+    "cta": {
+      "heading": "Pabrik, tunjukkan bulumu",
+      "text": "Kirim foto atau catatan proses, dan dapatkan daftar publik dengan nama kamu. Tanpa biaya, tanpa komisi, tanpa eksklusivitas.",
+      "button": "Cara ikut berkontribusi",
+      "alt": "Sebuah kok bulu bekas bertumpu di senar raket"
+    },
+    "marquee": "Enam belas bulu · Tiga foto · Satu pembacaan jujur"
+  },
+  "factories": {
+    "title": "Untuk pabrik",
+    "h1": "Untuk pabrik",
+    "statement": "Pajang bulumu di catatan publik, lengkap dengan namamu.",
+    "alt": "Sebuah kok bulu baru berdiri di permukaan gelap",
+    "giveHeading": "Yang kamu beri",
+    "give": [
+      "Foto bulu atau kok buatanmu, beserta grade yang kamu berikan.",
+      "Atau pengetahuan proses: cara memilah, memotong, dan menentukan grade.",
+      "Izin tertulis untuk menerbitkannya dengan lisensi terbuka."
+    ],
+    "getHeading": "Yang kamu dapat",
+    "get": [
+      "Daftar dengan nama, logo, lokasi, produk, dan kontak kamu.",
+      "Pencantuman nama di mana pun datamu dipakai ulang. Lisensinya mewajibkan itu.",
+      "Tautan dari setiap catatan dan artikel yang kamu sumbang."
+    ],
+    "termsHeading": "Ketentuannya, dengan bahasa sederhana",
+    "terms": [
+      {
+        "title": "Gratis, tidak eksklusif",
+        "note": "Tanpa biaya dan tanpa komisi. Kamu bebas bekerja sama dengan siapa pun."
+      },
+      {
+        "title": "Tanpa data pengunjung",
+        "note": "Kami tidak pernah meneruskan kontak atau unggahan pengunjung ke pabrik."
+      },
+      {
+        "title": "Tanpa nama klien",
+        "note": "Kami tidak menerbitkan untuk siapa kamu memproduksi."
+      },
+      {
+        "title": "Logomu tetap milikmu",
+        "note": "Logo dan merek dagang ditampilkan dengan izin dan tidak berlisensi terbuka."
+      },
+      {
+        "title": "Sekali terbit, tetap terbit",
+        "note": "Data terbuka tidak bisa ditarik dari salinan yang sudah dipegang orang lain."
+      }
+    ],
+    "sampleHeading": "Tampilan daftar",
+    "sampleNote": "Contoh daftar. Bukan pabrik sungguhan.",
+    "sample": {
+      "name": "Example Feather Works",
+      "fields": [
+        [
+          "Lokasi",
+          "Kota, Provinsi"
+        ],
+        [
+          "Produksi",
+          "Kok bulu angsa, grade 1 sampai 3"
+        ],
+        [
+          "Kontribusi",
+          "120 foto dan catatan pemilahan"
+        ],
+        [
+          "Situs web",
+          "example.com"
+        ],
+        [
+          "Kontak",
+          "sales@example.com"
+        ]
+      ]
+    },
+    "openHeading": "Kapan direktori dibuka",
+    "openText": "Direktori publik dibuka setelah dua pabrik dari luar bergabung, supaya tidak ada satu nama yang berdiri sendirian. Sampai saat itu, kontributor dicantumkan di setiap catatan dan artikel.",
+    "contactHeading": "Mulai dengan satu pesan",
+    "contactText": "Ceritakan apa yang kamu buat dan apa yang bisa dibagikan. Kami balas dengan teks izin singkat untuk dikonfirmasi.",
+    "contactButton": "Kirim email ke proyek",
+    "mailSubject": "Kontribusi pabrik untuk Open Shuttlecock",
+    "mailBody": "Nama pabrik:\nLokasi:\nYang kami produksi:\nYang bisa kami bagikan (foto, grade, catatan proses):\n"
+  },
+  "knowledge": {
+    "title": "Basis pengetahuan",
+    "h1": "Basis pengetahuan",
+    "statement": "Catatan sederhana soal bulu kok. Bebas disalin, cantumkan sumbernya.",
+    "alt": "Beberapa kok bulu baru berdiri di bawah cahaya terang",
+    "listHeading": "Artikel",
+    "read": "Baca",
+    "soonHeading": "Sedang disiapkan",
+    "soon": [
+      {
+        "title": "Lima grade bulu kok",
+        "note": "Ditulis bersama orang-orang yang memilahnya dengan tangan."
+      },
+      {
+        "title": "Bentuk bulu dan cara memotongnya",
+        "note": "Bulat penuh, kotak, dan potongan di antaranya."
+      },
+      {
+        "title": "Cacat umum dan cara mengenalinya",
+        "note": "Lipatan, bercak, helai terbelah, dan tangkai patah."
+      }
+    ],
+    "licenceHeading": "Pakai sebebasnya",
+    "licenceText": "Semua artikel berlisensi CC BY 4.0. Salin, terjemahkan, atau cetak ulang, dan cantumkan Open Shuttlecock beserta tautannya.",
+    "fallbackNote": "Artikel ini tersedia dalam bahasa Inggris dan Tionghoa.",
+    "back": "Semua artikel",
+    "updated": "Diperbarui"
+  },
+  "ask": {
+    "title": "Ajukan pertanyaan",
+    "h1": "Ajukan pertanyaan",
+    "statement": "Tanya apa saja soal kok. AI menyusun jawabannya, orang memeriksanya, lalu diterbitkan.",
+    "alt": "Dua kok bulu dan sebuah raket tergeletak di rumput",
+    "formHeading": "Pertanyaanmu",
+    "question": "Pertanyaan",
+    "questionHint": "Satu pertanyaan sekali kirim paling baik.",
+    "email": "Email (opsional)",
+    "emailHint": "Dipakai sekali, untuk memberi tahu jawabannya sudah terbit. Tidak pernah diterbitkan.",
+    "consent": "Saya paham bahwa pertanyaan dan jawabannya akan diterbitkan tanpa nama saya.",
+    "submit": "Kirim pertanyaan",
+    "stepsHeading": "Apa yang terjadi selanjutnya",
+    "steps": [
+      {
+        "title": "Dibaca sebagai pertanyaan",
+        "note": "Teks yang kamu kirim dianggap isi, bukan perintah."
+      },
+      {
+        "title": "AI menyusun jawaban",
+        "note": "Ditulis dari basis pengetahuan terbuka."
+      },
+      {
+        "title": "Orang meninjaunya",
+        "note": "Seminggu sekali, setiap draf disetujui atau ditolak."
+      },
+      {
+        "title": "Diterbitkan",
+        "note": "Jawaban yang disetujui masuk ke basis pengetahuan dengan CC BY 4.0."
+      }
+    ],
+    "notHeading": "Bukan untuk formulir ini",
+    "notText": "Laporan bug situs dikirim ke GitHub Issues. Permintaan hapus foto dikirim ke email proyek beserta nomor catatanmu.",
+    "mailSubject": "Pertanyaan untuk Open Shuttlecock",
+    "sentNote": "Aplikasi emailmu akan terbuka dengan pertanyaan yang sudah terisi. Mengirimnya dari sana menyelesaikan pengiriman."
+  },
+  "records": {
+    "title": "Catatan pembacaan",
+    "h1": "Catatan pembacaan",
+    "statement": "Foto dan hasil baca yang lolos tinjauan, terbuka untuk dicek siapa saja.",
+    "alt": "Sebuah kok bulu di permukaan gelap dengan bayangannya",
+    "emptyHeading": "Belum ada catatan publik",
+    "emptyText": "Catatan pertama berasal dari tiga puluh kok baru yang difoto untuk uji coba peluncuran, enam dari tiap grade.",
+    "shownHeading": "Isi sebuah catatan",
+    "shown": [
+      {
+        "title": "Tiga foto",
+        "note": "Seluruh kok, bulu dibuka, dan lawan cahaya."
+      },
+      {
+        "title": "Hasil baca",
+        "note": "Setiap baris beserta keyakinannya, persis seperti yang dilihat pengunjung."
+      },
+      {
+        "title": "Tanggal",
+        "note": "Dan apakah kok-nya baru atau bekas."
+      }
+    ],
+    "neverHeading": "Yang tidak dimuat",
+    "never": [
+      {
+        "title": "Tanda merek",
+        "note": "Foto yang menampakkan nama atau logo merek tetap privat."
+      },
+      {
+        "title": "Orang",
+        "note": "Foto yang menampakkan orang dihapus segera setelah terdeteksi."
+      },
+      {
+        "title": "Entri belum ditinjau",
+        "note": "Tidak ada yang publik sebelum disetujui orang."
+      }
+    ],
+    "deleteHeading": "Nomor catatanmu",
+    "deleteText": "Setiap pembacaan mendapat nomor catatan. Simpan baik-baik. Dengan nomor itu kamu bisa melihat hasilmu lagi, atau mengirim email agar fotomu dihapus.",
+    "sampleButton": "Lihat contoh hasil"
+  },
+  "about": {
+    "title": "Tentang",
+    "h1": "Tentang proyek ini",
+    "statement": "Open Shuttlecock adalah proyek gratis dan open source untuk membaca bulu kok.",
+    "alt": "Sebuah kok bulu bekas tergeletak di meja kayu",
+    "sections": [
+      {
+        "heading": "Siapa yang mengelola",
+        "body": [
+          "Proyek ini dimulai dan dijalankan oleh SP x SPORT, perusahaan peralatan olahraga di Australia. SP x SPORT juga menjual kok.",
+          "Karena itu, hasil dan artikel tidak merekomendasikan merek apa pun, termasuk milik kami, dan tidak ada hasil yang menilai apakah sebuah kok asli."
+        ]
+      },
+      {
+        "heading": "Cara kerja pembacaan",
+        "body": [
+          "Situs ini tidak melatih model sendiri. Situs mengirim tiga fotomu ke Claude, model AI buatan Anthropic, bersama pustaka acuan terbuka berisi contoh yang sudah diberi grade.",
+          "Hasilnya adalah kecenderungan, bukan vonis. Setiap baris punya keyakinan tinggi, sedang, atau rendah."
+        ]
+      },
+      {
+        "heading": "Fotomu",
+        "body": [
+          "Kamu harus mencentang persetujuan sebelum mengunggah. Data lokasi dihapus. Foto yang bukan kok, atau yang menampakkan orang, dihapus segera setelah terdeteksi.",
+          "Foto yang tidak lolos tinjauan dihapus dalam 30 hari. Foto yang disetujui disimpan dan bisa diterbitkan dengan CC BY 4.0. Salinan yang sudah diunduh orang lain tidak bisa ditarik kembali.",
+          "Kamu bisa meminta penghapusan kapan saja dengan nomor catatanmu."
+        ]
+      },
+      {
+        "heading": "Lisensi",
+        "body": [
+          "Kode berlisensi MIT. Basis pengetahuan dan data berlisensi CC BY 4.0. Logo dan merek dagang pabrik tidak berlisensi terbuka.",
+          "Repositorinya ada di github.com/kakajun123/openshuttlecock."
+        ]
+      },
+      {
+        "heading": "Di mana bisa dipakai",
+        "body": [
+          "Untuk saat ini, baca foto belum tersedia di Tiongkok daratan, Hong Kong, dan Makau, karena layanan AI yang dipakai tidak ditawarkan di sana. Basis pengetahuan dan pertanyaan terbuka di mana saja."
+        ]
+      },
+      {
+        "heading": "Kontak",
+        "body": [
+          "Tulis ke hello@openshuttlecock.com untuk pertanyaan, koreksi, atau permintaan penghapusan."
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "run": "Dikelola SP x SPORT, Australia. SP x SPORT juga menjual kok; hasil dan artikel tidak merekomendasikan merek apa pun.",
+    "region": "Untuk saat ini, baca foto belum tersedia di Tiongkok daratan, Hong Kong, dan Makau.",
+    "licence": "Kode MIT. Pengetahuan dan data CC BY 4.0.",
+    "credits": "Kredit foto",
+    "creditsNote": "Beberapa foto dipotong atau diberi warna.",
+    "source": "Sumber di GitHub",
+    "email": "Kirim email ke proyek",
+    "top": "Kembali ke atas"
+  },
+  "legal": {
+    "privacy": "Privasi",
+    "terms": "Ketentuan",
+    "draft": "Draf. Berlaku saat situs ini diluncurkan.",
+    "fallbackNote": "Halaman ini tersedia dalam bahasa Inggris dan Mandarin. Versi bahasa Inggris yang berlaku."
+  }
+}
