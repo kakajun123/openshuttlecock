@@ -3,7 +3,7 @@ title: Terms of use
 summary: The rules for using Open Shuttlecock, and what a reading is and is not.
 date: 2026-11-10
 order: 2
-status: draft
+status: final
 ---
 
 By using openshuttlecock.com you agree to these terms. If you do not agree, please do not use the site.

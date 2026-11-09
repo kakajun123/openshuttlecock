@@ -3,7 +3,7 @@ title: Privacy policy
 summary: What Open Shuttlecock collects, why, where it goes, and how to have it removed.
 date: 2026-11-10
 order: 1
-status: draft
+status: final
 ---
 
 This policy covers openshuttlecock.com. It is written to be read. If anything is unclear, write to hello@openshuttlecock.com.

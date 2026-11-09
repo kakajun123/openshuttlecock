@@ -3,7 +3,7 @@ title: 使用条款
 summary: 使用 Open Shuttlecock 的规则,以及识别结果是什么、不是什么。
 date: 2026-11-10
 order: 2
-status: draft
+status: final
 ---
 
 使用 openshuttlecock.com,即表示你同意本条款。如果不同意,请不要使用本网站。

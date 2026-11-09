@@ -3,7 +3,7 @@ title: 隐私政策
 summary: Open Shuttlecock 收集什么、为什么收集、交给谁处理,以及怎么要求删除。
 date: 2026-11-10
 order: 1
-status: draft
+status: final
 ---
 
 本政策适用于 openshuttlecock.com。我们尽量把它写成能读懂的话。有不清楚的地方,请写信到 hello@openshuttlecock.com。

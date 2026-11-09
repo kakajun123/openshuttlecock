@@ -1,0 +1,15 @@
+// Cloudflare deployment: the built site in ./dist is served as static files.
+// Deploy with:  node build.mjs && npx wrangler deploy
+{
+  "name": "openshuttlecock",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    { "pattern": "openshuttlecock.com", "custom_domain": true },
+    { "pattern": "www.openshuttlecock.com", "custom_domain": true }
+  ]
+}

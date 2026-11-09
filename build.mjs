@@ -647,6 +647,7 @@ fs.copyFileSync(path.join(SRC, 'styles', 'site.css'), path.join(DIST, 'assets', 
 fs.copyFileSync(path.join(SRC, 'scripts', 'site.js'), path.join(DIST, 'assets', 'site.js'));
 
 let count = 0;
+const urls = [];
 write('index.html', rootPage());
 for (const lang of LANGS) {
   const t = DICTS[lang];
@@ -668,7 +669,50 @@ for (const lang of LANGS) {
   }
   for (const [rel, html] of Object.entries(pages)) {
     write(path.join(lang, rel), html);
+    urls.push(`${SITE.url}/${lang}/${rel.replace(/index\.html$/, '')}`);
     count += 1;
   }
 }
+
+// Page for addresses that do not exist. Shown in the default language with a way back for everyone.
+{
+  const t = DICTS[DEFAULT_LANG];
+  const body = `
+${pageHeader(t, DEFAULT_LANG, 'missing', '')}
+<main id="main" class="board">
+  <div class="tile title-tile c-12">
+    <h1>Page not found</h1>
+    <p class="statement">This address does not exist. 这个地址不存在。</p>
+    <p><a class="button" href="/">Open Shuttlecock</a></p>
+  </div>
+</main>`;
+  write('404.html', layout({ t, lang: DEFAULT_LANG, pagePath: '', title: `Page not found · ${t.site.name}`, body, current: 'missing' }).replace('<link rel="canonical"', '<meta name="robots" content="noindex">\n  <link rel="canonical"'));
+}
+
+write('robots.txt', `User-agent: *\nAllow: /\n\nSitemap: ${SITE.url}/sitemap.xml\n`);
+write(
+  'sitemap.xml',
+  `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls
+    .map((u) => `  <url><loc>${u}</loc></url>`)
+    .join('\n')}\n</urlset>\n`,
+);
+// Response headers for the host. The page uses small inline scripts and inline style variables, hence 'unsafe-inline'.
+// Cloudflare Web Analytics (cookieless visit counts) is allowed to load and report.
+write(
+  '_headers',
+  `/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; base-uri 'self'; form-action 'self' mailto:; frame-ancestors 'none'
+
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/img/*
+  Cache-Control: public, max-age=604800
+`,
+);
+
 console.log(`Built ${count} pages in ${LANGS.length} languages to ${path.relative(ROOT, DIST)}/`);

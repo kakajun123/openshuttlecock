@@ -2,4 +2,6 @@ dist/
 .taste-skill/
 _internal/
 .claude/
+.wrangler/
+node_modules/
 .DS_Store
